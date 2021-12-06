@@ -1,0 +1,4 @@
+[12-Feb-2021 20:38:53 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/student_placement/db.php on line 3
+[13-Feb-2021 18:57:44 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/student_placement/db.php on line 3
+[01-Apr-2021 22:57:34 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/student_placement/db.php on line 3
+[02-Jun-2021 13:18:35 Asia/Kolkata] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/student_placement/db.php on line 3
