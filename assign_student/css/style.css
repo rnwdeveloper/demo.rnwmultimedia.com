@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.color-theme-1 {
+    background-color: #c52410;
+}
+
+section{
+	padding:40px 0 70px;
+}
+
+.main-title {
+    background: #efefef;
+    padding: 15px 25px;
+    border-radius: 4px;
+    margin: 0 0 50px;
+}
+.main-title h2 {
+    font-size: 22px;
+    margin: 0;
+    line-height: 26px;
+}
+.main-title h2 span {
+    float: right;
+    font-size: 20px;
+    color: #999;
+}
+.main-title h2 span span {
+    color: #000;
+}
+.form-box {
+    margin: 0 0 50px;
+}
+.form-box:last-child {
+    margin-bottom:0;
+}
+.box-inner {
+    padding: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+.form-box h3 {
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+.form-box h3:after {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #C52410;
+    content: "";
+    margin: 18px auto 0;
+}
+.form-group label {
+    line-height: 120%;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 6px;
+}
+.form-group .form-control {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 15px;
+}
+.form-group .form-control[type="file"] {
+    padding-top: 5px;
+}
+.form-group textarea.form-control {
+    height: 80px;
+    padding-top: 8px;
+}
+.form-group label.custom-control-label {
+    line-height: 26px;
+}
+.btn-cust{
+	text-align:center;
+}
+.btn-cust .btn-success {
+    border-radius: 3px;
+    border: 0;
+    background: #C52410;
+    text-transform: uppercase;
+    padding: 0 45px;
+    line-height: 44px;
+    font-size: 18px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.btn-cust .btn-success:hover{
+	color:#fff;
+	background:#222;
+}
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+.copyright a:hover {
+    color: #C52410;
+    text-decoration: none;
+}
+html .custom-radio .custom-control-input:checked~.custom-control-label::before,
+html .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #000;
+}
+.form-modal .modal-body h3 {
+    font-size: 20px;
+    padding: 0 0 14px;
+    margin: 0 0 20px;
+    position: relative;
+}
+.form-modal .modal-body h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #ccc;
+}
+ul.modal-tnq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+    font-size: 14.5px;
+}
+.modal-tnq-list li {
+    padding: 0 0 0 30px;
+    margin: 0 0 12px;
+}
+.modal-tnq-list li:last-child{
+	margin-bottom:0;
+}
+.modal-tnq-list ul {
+    list-style: none;
+    padding: 0;
+	margin-top:12px;
+}
+
+
+
+
+
+
+
