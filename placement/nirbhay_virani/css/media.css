@@ -1,0 +1,299 @@
+@media (max-width: 1200px)
+{
+	.header_bottom .nav-item .nav-link {
+	    font-size: 14px;
+	    padding: 0 8px;
+	}/*
+	.register_block{
+		top: 26px;
+		right: 10px;
+	}
+	.register_block_job_countre {
+	    margin-bottom: 40px;
+	}
+	.job_post_block {
+	    top: 1px;
+	    left: 11px;
+	}
+	.post_block_job_countre {
+	    margin-bottom: 10px;
+	}*/
+	.rendome_job_box{
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.job_company_daitels{
+		position: relative;
+		bottom: inherit;
+		left: inherit;
+		right: inherit;
+		padding: 0;
+	}
+	.recent_jobs .sec-heading h2{
+		font-size: 24px;
+	}
+	.recent_jobs .sec-heading{
+		margin-bottom: 20px;
+	}
+	.recent_jobs_info_block ul li .card .card-body .card-title{
+		font-size: 16px;
+	}
+
+	.placement_partner_logo_col{
+		max-width: inherit;
+	}
+	.success_storics_slider .owl-nav button.owl-prev{
+		left: -30px;
+	}
+	.success_storics_slider .owl-nav button.owl-next {
+	    right: -30px;
+	}
+	.posted_job_sidebar{
+		width: 350px;
+	}
+	.footer.show_posted_job_sidebar_enter, .posted_job_form_sec.show_posted_job_sidebar_enter{
+		padding-right: 350px;
+	}
+}
+@media (max-width: 1000px)
+{
+	.recent_jobs_left_block{
+		margin-bottom: 50px;
+	}
+	.success_storics_slider .owl-nav button.owl-prev{
+		left: -30px;
+	}
+	.success_storics_slider .owl-nav button.owl-next{
+		right: -30px;
+	}
+
+	.success_storics_slider .owl-nav button{
+		position: absolute;
+		top: 42%;
+	}
+
+	.posted_job_sidebar{
+		width: 350px;
+	}
+	.footer.show_posted_job_sidebar_enter, .posted_job_form_sec.show_posted_job_sidebar_enter{
+		padding-right: 0;
+	}
+}
+@media (max-width: 991px)
+{
+	.header_bottom .nav-item .nav-link {
+	    font-size: 14px;
+	    padding: 5px 8px;
+	}
+
+	.header_bottom .logo{
+		display: block;
+	}
+	.header_top{
+		display: none;
+	}
+	.navbar-dark .navbar-toggler{
+		border-color: transparent;
+		color: #fff;
+	}
+	.logo{
+		width: 250px;
+	}
+	.header_bottom .nav-item .nav-link:before{
+		display: none;
+	}
+	.header_bottom .nav-item .nav-link:hover{
+		background-color: var(--red);
+		border-radius: 3px;
+	}
+	.navbar-nav{
+		margin-top: 15px;
+	}
+	.register_block {
+	    top: 18px;
+	    right: 13px;
+	}
+	.job_post_block {
+	    top: 8px;
+	    left: 13px;
+	}
+	.post_block_job_countre{
+		margin-bottom: 5px;
+	}
+
+	.working_process_box{
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.how_it_works .row .col-xl-4:last-child .working_process_box{
+		margin-bottom: 0;
+	}
+	.recent_jobs .sec-heading h2{
+		font-size: 26px;
+	}
+	.recent_jobs_right_block{
+		padding: 15px;
+		border: 1px solid #ccc;
+	}
+	.footer_form{
+		margin-top: 20px;	
+	}
+	.footer_bell_info {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	}
+	.posted_job_sidebar.show_posted_job_sidebar {
+	    top: 90px;
+	}
+	.header_is_fixed + .posted_job_form_sec + aside.posted_job_sidebar {
+	    top: 104px;
+	}
+}
+
+@media (max-width: 767px)
+{
+	section{
+		padding: 40px 0;
+	}
+	.header_top_left_contect_block{
+		text-align: center !important;
+		margin-top: 10px;
+	}
+	.logo_block{
+		text-align: center;
+	}
+	.header_top_left_contect_block ul li a{
+		font-size: 14px;
+	}
+	.banner{
+		height: auto;
+	}
+	.register_block {
+	    top: 60px;
+	    right: 33px;
+	}
+	.post_block_job_countre{
+		margin-bottom: 25px;
+	}
+	.job_post_block {
+	    top: 60px;
+	    left: 14px;
+	}
+	.banner_in_right_block{
+		margin-top: 15px;
+	}
+	.working_process_box{
+		width: 330px;
+	}
+	.recent_jobs_company_logo{
+		width: 100px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.recent_jobs_info_block ul li .card .card-body .card-title {
+	    font-size: 16px;
+	}
+	.recent_jobs_info_block ul li .card .card-body{
+		padding: 0;
+	}
+	.success_storics_slider .owl-dots{
+		display: block;
+	}
+	.success_storics_slider .owl-nav{
+		display: none;
+	}
+	.counter_box{
+		margin: 15px 0;
+	}
+	.ball_icon{
+		left: 70px;
+	}
+	.success_storics_slider .owl-dots{
+		margin-top: 10px;
+	}
+	.header_bottom .nav-item .nav-link:after{
+		display: none;	
+	}
+	.header_bottom .nav-item .nav-link.active{
+		background-color: var(--red);
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 580px)
+{
+	.header_bottom{
+		padding: 15px;
+	}
+	.job_post_block{
+		top: 38px;
+	}
+	.logo {
+	    width: 200px;
+	}
+	.recent_jobs_info_block ul li .job_type_lable_block{
+		text-align: left !important;
+		margin-top: 5px;
+	} 
+	.ball_icon{
+		position: relative;
+		left: inherit;
+	}
+	.ball_icon_info {
+	    padding-left: 0;
+	}
+	.posted_job_box {
+	    padding: 15px;
+	}
+
+	.posted_job_sidebar.show_posted_job_sidebar {
+	    top: 83px;
+	}
+	.header_is_fixed + .posted_job_form_sec + aside.posted_job_sidebar {
+	    top: 93px;
+	}
+}
+
+@media (max-width: 480px)
+{
+	.register_block{
+		position: relative;
+		text-align: center;
+		padding: 15px 0;
+		top: inherit;
+		right: inherit;
+	}
+	.post_block_job_countre,
+	.register_block_job_countre {
+	    margin-bottom: 20px;
+	}
+	.banner_in_left_block{
+		background-color: #f7f7f7;
+	}
+	.job_post_block {
+		position: relative;	
+		text-align: center;
+		padding: 15px 0;
+	    top: inherit;
+	    left: inherit;
+	}
+	.sec-heading h2{
+		font-size: 26px;
+	}
+	.working_process_box {
+		max-width: 300px;
+	}
+	.stepe_cunter {
+	    font-size: 80px;
+	    top: -43px;
+	    left: 66px;
+	}
+	.placement_partner_company_logo{
+		width: 138px;
+		height: 138px;
+	}
+	.posted_job_sidebar{
+		width: 100%;
+	}
+}

@@ -1,0 +1,900 @@
+:root {
+    --red: #c52410;
+    --cust-blue: #0b527e;
+    --custi-light-blue: #00739e;
+}
+body{
+	margin: 0;
+	font-family: 'Segoe UI';
+	font-size: 16px !important;
+	font-weight: 400;
+}
+*{
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+button:focus{
+	outline: none;
+}
+button{
+	transition: all 0.5s ease 0s;
+}
+section{
+	padding: 60px 0;
+}
+.sec-heading span{
+	color: var(--custi-light-blue);
+	font-size: 16px;
+} 
+.sec-heading h2{
+	font-weight: 700;
+	color: var(--cust-blue);
+	font-size: 30px;
+}
+.sec-heading{
+	margin-bottom: 40px;
+}
+/*=========================================
+================ Header Css =========================
+=============================================================*/
+.header_top{
+	padding: 15px 0;
+}
+.header_bottom.fixed{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	padding: 20px 15px;
+	animation-name: header_fixed;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	background-color: #000;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+
+}
+@keyframes  header_fixed{
+	from
+	{
+		transform: translateY(-80px);
+	}
+}
+.header_bottom{
+	background-color: #2B2A28;
+	transition: all 0.5s ease 0s;
+}
+.logo{
+	width: 250px;
+	display: inline-block;
+}
+.text-dark-bold{
+	color: #787878;
+	font-weight: 600;
+}
+.header_top_left_contect_block ul li a {
+	color: #787878;
+	font-size: 12px;
+}
+.header_bottom .nav-item .nav-link{
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.header_bottom .nav-item .nav-link:hover{
+	color: #fff;
+}
+.header_bottom .nav-item .nav-link.active:after{
+	opacity: 1;
+	visibility: visible;
+	right: 0;
+}
+.header_bottom .nav-item .nav-link:after{
+	content: "";
+	background-color: #fff;
+	left: 0;
+	right: 100%;
+	margin: 0 auto;
+	position: absolute;
+	height: 2px;
+	width: 15px;
+	bottom: -4px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease 0s;
+}
+.header_bottom .nav-item .nav-link:hover:after{
+	opacity: 1;
+	visibility: visible;
+	right: 0;
+}
+.header_bottom .nav-item .nav-link:before{
+	content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.header_bottom ul li:first-child a:before{
+	display: none;
+}
+.header_bottom {
+	padding: 13px 0;
+}
+.header_bottom .logo{
+	display: none;
+}
+
+/*=========================================
+================ Banner Css =========================
+=============================================================*/
+.banner{
+	background-image: url('../images/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 500px;
+	vertical-align: bottom;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: block;
+}
+.banner_in_left_block{
+	background-color: #fff;
+}
+.register_block ul li{
+	display: inline-block;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px 7px;
+	font-size: 23px;
+	background-color: #F1F1F1;
+}
+.top_bob_text{
+	display: inline-block;
+	width: 100%;
+}
+.top_bob_text:before {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #ddd;
+    position: absolute;
+    top: 11px;
+    left: 0;
+}
+
+.top_bob_text:after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #ddd;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+.custom-btn{
+	border-radius: 0;
+	color: #fff;
+	padding: 8px 30px;
+	width: 165px;
+}
+.custom-btn:hover{
+	color: #fff;
+}
+.cust-btn-light-blue{
+	background-color: var(--cust-blue);
+}
+
+.cust-btn-red{
+	background-color: var(--red);
+}
+.register_block {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+}
+.register_block_job_countre{
+	margin-bottom: 50px;
+}
+.job_post_block {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+}
+.post_block_job_countre{
+	margin-bottom: 27px;
+}
+
+/*=========================================
+================ Rendome Jobs Css =========================
+=============================================================*/
+.rendome_job_box{
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.1);
+	height: 290px;
+	position: relative;
+}
+.job_type_lable{
+	padding: 3px 6px;
+	display: inline-block;
+}
+.job_type_lable_freelancer{
+	background-color: rgba(63,179,229,0.2);
+	color: #3FB3E5;
+}
+.job_company_daitels {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.job_definition_block h3 {
+    color: var(--custi-light-blue);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px 0 10px;
+}
+.job_company_daitels .job_salary{
+	vertical-align: sub;
+	color: var(--red);
+}
+.job_company_daitels .comany_open_week{
+	float: right;
+	background-color: rgba(0,0,0,0.1);
+	padding: 1px 6px;
+	display: inline-block;
+}
+.job_type_lable_block{
+	margin-bottom: 20px;
+}
+.jobs_company_logo{
+	width: 215px;
+	height: 60px;
+	margin: 0 auto;
+}
+.job_type_lable_full_time{
+	color: #06A607;
+	background-color: rgba(6,166,7,0.1);
+}
+.job_type_lable_part_time{
+	background-color: rgb(246,148,32,0.1);
+	color: #F69420;
+}
+.new_rendom_job .row .col-xl-3:last-child .rendome_job_box{
+	margin-bottom: 0;
+}
+
+/*=========================================
+================ How It Works Css =========================
+=============================================================*/
+.how_it_works{
+	background-color: #F8F8F8;
+}
+.working_process_box{
+	text-align: center;
+	position: relative;
+}
+.working_process_box_img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.working_process_box_info h3{
+	color: var(--custi-light-blue);
+	font-weight: 600;
+	font-size: 22px;
+	margin: 12px 0;
+}
+.stepe_cunter {
+    color: rgba(0,112,158,0.1);
+    font-size: 110px;
+    position: absolute;
+    top: -77px;
+    left: 71px;
+}
+.how_it_works .sec-heading{
+	margin-bottom: 70px;
+}
+
+/*=========================================
+============ Recent Jobs Block Css ====================
+=============================================================*/
+.recent_jobs_info_block ul li .card{
+	padding: 8px 15px;
+	border-radius: 0;
+}
+.recent_jobs_info_block ul li .card .card-body{
+	padding: 0 0 0 15px;
+}
+.recent_jobs_block_in_box_onfo_list li i {
+    margin-right: 8px;
+}
+.recent_jobs_block_in_box_onfo_list li {
+    display: inline-block;
+    margin: 3px 20px 3px 0;
+    color: #666;
+}
+.recent_jobs_info_block ul li .card .card-body .card-title{
+	font-size: 18px;
+}
+.recent_jobs_info_block ul li .job_type_lable.job_type_lable_full_time{
+	border: 1px solid #06A607;
+	color: #06A607;
+}
+.recent_jobs_info_block ul li:nth-child(odd) .card{
+	border-left: 5px solid #03A504;
+}
+.recent_jobs_info_block ul li:nth-child(even) .card{
+	border-left: 5px solid #F6931E;
+}
+.job_type_lable_internsship{
+	border: 1px solid #F79A2C;
+	background-color: rgba(247,154,44,0.1);
+	color: #F79A2C;	
+}
+.resume_uplode_block{
+	height: 100%;
+	margin-top: 50px;
+}
+.resume_uplode_btn button {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    border: 1px solid #ddd;
+}
+.resume_uplode_block .sec-heading{
+	margin-bottom: 30px;
+}
+.resume_uplode_btn input{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0;
+}
+.resume_uplode_btn input:hover ~ button{
+	background-color: var(--custi-light-blue);
+	color: #fff;
+}
+
+/*=========================================
+============ Our Success Css ====================
+=============================================================*/
+.success_storics_slide_box .rambhai{
+	min-height:420px;
+	box-shadow: 0 .1rem 0.5rem rgba(0,0,0,0.08);
+	padding: 20px;
+}
+.success_storics_slide_box{	
+	padding: 10px;
+	text-align: center;
+}
+.story_slide_info p{
+	color: #666;
+	font-size: 16px;
+}
+.story_slide_logo {
+    width: 220px;
+    height: 80px;
+    margin: 0 auto;
+}
+.success_storics_slider .story_slide_info p img{
+	width: 30px;
+	display: inline-block;
+}
+/*.success_storics_slider .owl-nav button span{
+	font-size: 0;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+}
+.success_storics_slider .owl-nav button{
+	position: absolute;
+	top: 50%;
+}
+.success_storics_slider .owl-nav button.owl-prev{
+	left: -40px;
+}
+.success_storics_slider .owl-nav button.owl-next{
+	right: -40px;
+}
+.success_storics_slider .owl-prev span:before,
+.success_storics_slider .owl-next span:before{
+	font-size: 16px;
+	font-weight: 900;
+	font-family: "Font Awesome 5 Free";
+}
+.success_storics_slider .owl-prev span:before{
+	content: "\f053";
+}
+
+.success_storics_slider .owl-next span:before{
+	content: "\f054";
+}*/
+.success_storics_slider .owl-dots{
+	margin-top: 15px;
+}
+.success_storics_slider .owl-dots .owl-dot.active span{
+	background-color: #000 !important;
+}
+.success_storics_slider .owl-dots .owl-dot.active{
+	border-color: #000 !important;
+	transform: scale(1.1);
+}
+.success_storics_slider .owl-dots .owl-dot{
+	position: relative;
+	margin: 0 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 100%;
+	border: 1px solid #000;
+	border-color: transparent;
+	transform: scale(0.9);
+}
+.success_storics_slider .owl-dots .owl-dot span{
+	background-color: #000;
+	width: 8px !important;
+	height: 8px !important;
+	position: relative;
+	margin: 6px auto !important;
+}/*
+.success_storics_slider .owl-dots .owl-dot:before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	position: absolute;
+	border-radius: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}*/
+.success_storics_slider .owl-dots{
+	/*display: none;*/
+}
+
+.success_storics_slider .owl-nav{
+	display: none;
+}
+
+/*=========================================
+================= Counter Css ====================
+=============================================================*/
+.counter{
+	background-color: var(--cust-blue);
+}
+.counter_box{
+	text-align: center;
+}
+.counter_box h3{
+	font-size: 50px;
+	color: #fff;
+	font-weight: 600;
+}
+.counter_box_lable{
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 8px;
+}
+.placement_partner .sec-heading p{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #666;
+}
+.placement_partner_company_logo{
+	background: #fff;
+	border: 1px solid #efefef;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.07);
+	height: 180px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.placement_partner_company_logo img{
+	padding: 15px;
+}
+.placement_partner_company_logo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1px 8px 0;
+    top: 100%;
+    opacity: 0.3;
+    height: 20px;
+    background: url(https://www.rnwmultimedia.com/wp-content/uploads/2019/04/box-shadow-1.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}/*
+.placement_partner_logo_col{
+	max-width: 20%;
+}
+*/
+/*=========================================
+================= Company Testimonials Css ====================
+=============================================================*/
+.company_testimonials{
+	background-color: #F8F8F8;
+}
+.client_testi_box{
+	border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1)
+}
+
+/*=========================================
+================= Footer Css ====================
+=============================================================*/
+.footer{
+	background-color: var(--cust-blue);
+	padding: 40px 0;
+	transition: all 0.5s ease 0s;
+}
+.footer_form .form-control{
+	border-radius: 0;
+	height: 42px;
+	margin-right: 15px;
+	padding-left: 50px;
+	border: 0;
+}
+.cust-btn-black{
+	background-color: #000;
+}
+.footer_bell_info{
+	color: #fff;
+}
+.footer_bell_info h5 {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer_bell_info span {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.ball_icon {
+    font-size: 40px;
+    position: absolute;
+    top: -4px;
+}
+.ball_icon_info {
+    padding-left: 50px;
+}
+.footer_form span {
+    color: #000;
+    font-size: 23px;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    opacity: 0.3;
+}
+
+/*=========================================
+================= Posted A Job Css ====================
+=============================================================*/
+/*.recent_job_add_box .posted_job_box{
+	width: 
+}*/
+.posted_job_box{
+	height: 100%;
+	padding: 15px;
+	/*margin-bottom: 15px;*/
+	border-radius: 4px;
+	transition: all 0.5s ease 0s;
+	border: 1px solid #dee2e6;
+	/*box-shadow: 0 .5rem 1rem rgba(0,0,0,0.050);*/
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+}
+.posted_job_box:hover{
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.start_end_date{
+	color: #206dfb;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.corse_title{
+	text-transform: capitalize;
+	font-size: 28px;
+}
+.job-post-item-body li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.job-post-item-body li a, .job-post-item-body li a{
+	font-size: 12px !important;
+}
+.location{
+	color: #666;
+}
+.Job_student_name{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0px;
+	color: #000000;
+	display: block;
+}
+.student_position{
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	padding: 0 10px;
+	background: #fdab44;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;	
+}
+.student_skill{
+	color: #999999;
+	font-size: 12px;
+}
+.student_contact_info{
+	margin-top: 10px;
+}
+.student_contact_info a{
+	text-decoration: underline;
+	color: #666;
+	font-size: 12px;
+}
+.posted_job_form .row .col-xl-6:last-child .posted_job_box{
+	margin-bottom: 0;
+}  
+
+.student_contact_info_btns a{
+	margin-top: 10px;
+	padding: 4px 8px;
+	font-size: 14px;	
+}
+
+/*=========================================
+================= Main Page Css ====================
+=============================================================*/
+.main_page_job_position_box{
+	text-align: center;
+}
+.position_job_icon svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--cust-blue);
+}
+.main_page_job_position_box a {
+    font-size: 19px;
+    color: var(--cust-blue);
+    font-weight: 400;
+    margin: 10px 0 0;
+    display: inline-block;
+}
+.recent_job_add_box .job-post-item-body a{
+	color: #212529;
+	font-size: 12px !important;
+}
+.recent_job_add_box .job-post-item-body i{
+	font-size: 12px !important;
+}
+.recent_job_add_box .corse_title a{
+	color: #000;
+	font-size: 12px !important;
+}
+.recent_job_add_box .corse_title span{
+	font-size: 12px !important;
+}
+.job_company_logo {
+    width: 200px;
+    margin: 0 auto;
+}
+.jobs_company_logo_info_box_info a{
+	color: #000;
+	font-size: 22px;
+	margin: 12px 0 15px;
+	display: inline-block;
+}
+.jobs_company_logo_info_box_info{
+	text-align: center;
+}
+.jobs_company_logo_info_box_info p .number{
+	font-size: 16px;
+	background: #fed8a9;
+	color: #fff;
+	padding: 2px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/*=========================================
+================= Profile Pages Css ====================
+=============================================================*/
+.profile_sec_design{
+	background-color: #f7f7f7;
+}
+.profile_common_design_box{
+	background-color: #fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+	position: relative;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.company_profile_logo{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.company_profile_block_profile_sec{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.company_name{
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	margin-top: 15px;
+}
+.user_stats li{
+	padding: 0 0 8px 25px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.user_stats li:before{
+	font-size: 15px;
+	left: 1px;
+	position: absolute;
+	top: 3px;
+	z-index: 1;
+	font-family: FontAwesome;
+}
+.user_location:before{
+	content: "\f041";
+}
+.member_since:before{
+	content: "\f007";
+}
+.profile_other_info_block h3{
+	font-size: 16px;
+	line-height: 140%;
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+.bg-dark-type{
+	background-color: #eee;
+}
+.modal {
+    overflow: auto !important;
+}
+.apllay_now_resume_uplode_btn a{
+	color: #666;
+	font-size: 12px;
+}
+.ring_round_block li.green_rign{
+	border-color: green;
+}
+.ring_round_block li.yellow_rign{
+	border-color: #c8c87a;
+	cursor: pointer;
+}
+.ring_round_block li.red_rign{
+	border-color: red;
+}
+.ring_round_block li {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+.ring_round_block {
+    float: right;
+}
+.Placement_Policy_Letter{
+	list-style: decimal;
+}
+.Placement_Policy_Letter li{
+	margin-bottom: 9px;
+}
+
+/*|||||||||||||||||||||||||||||||========================================= |||||||||||||||||||||||||||
+|||||||||================= Posted Job Side Bar Css ====================||||||||||||||||||||||
+||||||||||||||=============================================================|||||||*/
+.posted_job_sidebar {
+    background-color: #f2f2f2;
+    width: 430px;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 134px;
+    right: -100%;
+    z-index: 999999999999;
+    transition: all 0.5s ease 0s;
+}
+.posted_job_sidebar.show_posted_job_sidebar{
+	right: 0;
+}
+.posted_job_sidebar_form {
+    overflow-y: auto;
+    max-height: 500px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.posted_job_sidebar_inner{
+	padding: 15px;
+}
+.posted_job_sidebar_inner h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.header_bottom.fixed ~ .posted_job_sidebar{
+	display: none;
+}
+
+.header_is_fixed + .posted_job_form_sec + aside.posted_job_sidebar {
+    top: 64px;
+    height: 100%;
+}
+.posted_job_form_sec{
+	transition: all 0.5s ease 0s;
+}
+.footer.show_posted_job_sidebar_enter,
+.posted_job_form_sec.show_posted_job_sidebar_enter{
+	padding-right: 430px;
+	transition: all 0.5s ease 0s;
+}

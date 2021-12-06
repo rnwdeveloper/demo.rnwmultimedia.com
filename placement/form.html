@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Job Application Submission Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/datepicker.min.css" type="text/css">
+</head>
+
+<body>
+<section class="color-theme-1">
+<div class="container text-center pt-3 pb-1">
+    <img src="img/rnw.png" width="320" alt="Red & White MUltimedia Education" title="Red & White MUltimedia Education"/>
+</div>
+</section>
+
+<section>
+<div class="container">
+<form>
+<div class="row">
+    <div class="col-lg-8 my-3">
+        <h3>Employment Application</h3>
+    </div>
+    <div class="col-lg-4 my-3">
+        <span>APPLICATION NO.:</span>
+        <input type="text" class="form-control " required />
+    </div>
+    <div class="w-100 text-center color-theme-1 text-white py-1 my-3">
+        <h2>Applicant Information</h2>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Full Name</label>
+        <input type="text" class="form-control " placeholder="First Name   Middle Name   Last Name" required />
+    </div>
+    <div class="form-group col-md-4 my-3">
+        <label>Select Your Branch</label>
+        <select id="inputState" class="form-control" required>
+            <option disabled selected>Branch</option>
+            <option>RNW1</option>
+            <option>RNW2</option>
+            <option>RNW3</option>
+            <option>RNW4</option>  
+        </select>
+    </div> 
+    <div class="col-lg-12 my-3">
+        <label>Upload Photo</label>
+        <input type="file" class="form-control" required />
+    </div>
+    <div class="col-lg-12 my-3">
+        <label>Residential Address</label>
+        <textarea type="text" class="form-control" placeholder="Your Address" required></textarea>
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>City</label>
+        <input type="text" class="form-control"  placeholder="City" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Area</label>
+        <input type="text" class="form-control" placeholder="Area" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Zipcode</label>
+        <input type="text" class="form-control"  placeholder="395006" required onkeypress="return isNumberKey(event);" maxlength="6" />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label  for="phone">Phone</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">+91</div>
+            </div>
+            <input type="text" class="form-control" id="phone" placeholder="Mobile Number" required onkeypress="return isNumberKey(event);" maxlength="10" />
+        </div>
+    </div>
+    <div class="col-lg-2 my-3">
+        <label for="GrId">Gr Id</label>
+        <input type="text" class="form-control" id="GrId"  placeholder="0001" required />
+    </div>
+    <div class="col-lg-3 my-3">
+        <label >Course</label>
+       
+        <select id="inputState" class="form-control" required>
+            <option disabled selected>Courses</option>
+            <option>C</option>
+            <option>C++</option>
+             
+        </select>
+    </div>
+    <div class="col-lg-3 my-3">
+        <label >Qualification</label>
+       <select id="inputState" class="form-control" required>
+            <option disabled selected>Qualification</option>
+            <option>10TH</option>
+            <option>12TH</option>
+            <option>Graduation</option>
+            <option>Post Graduation</option>
+             
+        </select>
+    </div>
+    <div class="col-lg-6 my-3">
+        <label >Faculty Name</label>
+        <select id="inputState" class="form-control" required>
+            <option disabled selected>--select--</option>
+            <option>Pradip Sir</option>
+            <option>Darshan Sir</option>
+            <option>Sagar Sir</option>
+            
+           
+        </select>
+    </div>
+    <div class="col-lg-6 my-3">
+        <label >Position Applied for</label>
+        <select id="inputState" class="form-control" required>
+            <option disabled selected>--select--</option>
+            <option>PhotoShop</option>
+            <option>Video Editor</option>
+            <option>Web Designer</option>
+            <option>Graphic Designer</option>
+            <option>Front Developer</option>
+            <option>Laravel Developer</option>
+            <option>Core PHP</option>
+            <option>Codeigniter</option>
+            <option>Autocad</option>
+            <option>Codeigniter</option>
+           
+        </select>
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Salary expectation</label>
+        <input type="text" class="form-control"  placeholder="15000/-" required />
+    </div>
+    <div class="col-lg-6 my-3">
+        <label >Running Topic</label>
+        <select id="inputState" class="form-control" required multiple="">
+            <option disabled selected>--select--</option>
+            <option>HTML</option>
+            <option>HTML5</option>
+            <option>Css & Css3</option>
+            
+           
+        </select>
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Prefer Location For Job</label>
+        <input type="text" class="form-control"  placeholder="Varachha" required />
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Batch Time</label>
+        <input type="text" class="form-control"  placeholder="8:00 AM" required />
+    </div>
+    <div class="col-lg-12 my-3">
+        <label>Remarks</label>
+        <textarea type="text" class="form-control"  placeholder="Any Remarks" required /></textarea>
+    </div>                          
+    <div class="w-100 text-center color-theme-1 text-white py-1 my-3">
+        <h2>Previous Employment</h2>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Company</label>
+        <input type="text" class="form-control"  placeholder="Company Name" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Company Number</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">+91</div>
+            </div>
+            <input type="text" class="form-control" id="phone-2" placeholder="company mobile number" required  onkeypress="return isNumberKey(event);" maxlength="10" />
+        </div>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Address</label>
+        <input type="text" class="form-control"  placeholder="Company Address" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Supervisor</label>
+        <input type="text" class="form-control"  placeholder="Company Supervisor" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Job Title</label>
+        <input type="text" class="form-control"  placeholder="UI/UX Designer" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Starting Salary</label>
+        <input type="text" class="form-control"  placeholder="8000/-" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Ending Salary</label>
+        <input type="text" class="form-control"  placeholder="12000/-" required />
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Responsibilities</label>
+        <input type="text" class="form-control"  placeholder="" required />
+    </div>
+    <div class="col-lg-3 my-3">
+        <label>Form</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="col-lg-3 my-3">
+        <label>To</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="col-lg-12 my-3">
+        <label>Reason For Leaving</label>
+        <textarea type="text" class="form-control"  placeholder="" required /></textarea>
+    </div>
+    <div class="col-lg-8 my-3">
+        <h5>May we contact your previous supervisor for a reference?</h5>
+    </div> 
+    <div class="col-lg-4 my-3">
+        <div class="form-check float-left mr-3" >
+            <input class="form-check-input" type="radio" name="exampleRadios" id="Yes" value="option1" checked />
+            <label class="form-check-label" for="Yes">Yes</label>
+        </div>
+        <div class="form-check float-left">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="No" value="option2" />
+            <label class="form-check-label" for="No">No</label>
+        </div>
+    </div>
+    <div class="col-lg-12 my-3">
+        <h4>
+            <input type="checkbox" name="" />
+            I have read the rules of job application and I agree with it. Which attach with this application.
+        </h4>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label for="Signature">Student Signature</label>
+        <input type="file" class="form-control-file" placeholder="" id="Signature" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Select Date</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <!-- <div class="w-100 text-center color-theme-1 text-white py-1 my-3">
+        <h2>Office Use Only</h2>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label for="officeReceiver">Receive by</label>
+        <select id="officeReceiver" class="form-control" required>
+            <option disabled selected>Click Here</option>
+            <option>Ruchita Ma'am</option>
+            <option>Mital Ma'am</option>
+            <option>Hinal Ma'am</option>
+            <option>Rakesh Sir</option>  
+        </select>
+    </div> -->
+    <!-- <div class="col-lg-4 my-3">
+        <label>Receive Date</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="col-lg-8 my-3">
+        <label for="FacultyReceiver">Receive Faculty</label>
+        <select id="FacultyReceiver" class="form-control" required>
+            <option disabled selected>Click Here</option>
+            <option>Bhavin Sir</option>
+            <option>Mehul Sir</option>
+            <option>Divyesh Sir</option>
+            <option>Rakesh Sir</option>  
+        </select>
+    </div> -->
+    <!-- <div class="col-lg-4 my-3">
+        <label>Receive Date</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="w-100 text-center color-theme-1 text-white py-1 my-3">
+        <h2>Faculty Use Only</h2>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Company</label>
+        <input type="text" class="form-control"  placeholder="Company Name" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Phone Number</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">+91</div>
+            </div>
+            <input type="number" class="form-control" id="phone-3" placeholder="92777 60777" required />
+        </div>
+    </div> -->
+    <!-- <div class="col-lg-8 my-3">
+        <label>Address</label>
+        <input type="text" class="form-control"  placeholder="Company Address" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Supervisor</label>
+        <input type="text" class="form-control"  placeholder="Supervisor Name" required />
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Job Title</label>
+        <input type="text" class="form-control"  placeholder="Web Designer" required />
+    </div>
+    <div class="col-lg-6 my-3">
+        <label>Starting Salary</label>
+        <input type="text" class="form-control"  placeholder="15000/-" required />
+    </div>
+    <div class="col-lg-12 my-3">
+        <label>Responsibilities</label>
+        <input type="text" class="form-control"  placeholder="Graphics & Web Design" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Form</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Refrence By</label>
+        <input type="text" class="form-control"  placeholder="" required />
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="S-sign">Student Sign</label>
+        <input type="file" class="form-control-file" id="S-sign" required />
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="F-sign">Faculty Sign</label>
+        <input type="file" class="form-control-file" id="F-sign" required />
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Form</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div>
+    <div class="w-100 text-center color-theme-1 text-white py-1 my-3">
+        <h2>Office Use Only</h2>
+    </div>
+    <div class="col-lg-8 my-3">
+        <label>Receive By</label>
+        <select id="Hod" class="form-control" required>
+            <option disabled selected>HOD Department</option>
+            <option>Bhavin Sir</option>
+            <option>Mehul Sir</option>
+            <option>Divyesh Sir</option>
+            <option>Rakesh Sir</option>  
+        </select>
+    </div>
+    <div class="col-lg-4 my-3">
+        <label>Receive Date</label>
+        <input type="text" class="form-control"  placeholder="MM/DD/YYYY" required data-toggle="datepicker" />
+    </div> -->
+    <div class="w-100 text-center mt-5 my-5">
+        <button class="btn btn-success text-uppercase text-white w-100 rounded-0" type="submit">Submit form</button>
+    </div>               
+</div>
+</form>
+</div>
+</section>
+
+<section class="pt-3 pb-3 mt-3 text-center text-white" style="background-color: #1c2023;">
+<div class="container">
+    © Copyright 2019. Red & White Multimedia Education. All Rights Reserved.
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.js" type="text/javascript"></script>
+<script src="js/datepicker.min.js" type="text/javascript"></script>
+<script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<script>
+function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+
+</script>
+
+
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+Modal -->
+<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div> 
+</div> -->

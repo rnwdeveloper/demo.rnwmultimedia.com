@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+label {
+	color: black;
+	font-size: 18px;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 7px 0;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h4 input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+}
+
+.color-theme-1 {
+    background-color: #c52410!important;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.form-control,
+.input-group-text {
+	border-radius: 0;
+	border: 1px solid #000000;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+button.btn-success {
+	font-size: 36px;
+}

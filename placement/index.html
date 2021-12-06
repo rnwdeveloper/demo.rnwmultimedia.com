@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>T&P</title>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #f1f1f1;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. */
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        
+        a {
+            text-decoration: none;
+        }
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        
+        *[x-apple-data-detectors],
+        /* iOS */
+        
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        
+        .im {
+            color: inherit !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        
+        img.g-img + div {
+            display: none !important;
+        }
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+    </style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        .primary {
+            background: #0d0cb5;
+        }
+        
+        .bg_white {
+            background: #ffffff;
+        }
+        
+        .bg_light {
+            background: #fafafa;
+        }
+        
+        .bg_black {
+            background: #000000;
+        }
+        
+        .bg_dark {
+            background: rgba(0, 0, 0, .8);
+        }
+        
+        .email-section {
+            padding: 2.5em;
+        }
+        
+        .worning {
+            display: inline-block;
+            padding: 3px 26px;
+            background: rgba(0, 128, 0, 0.5);
+            color: #fff;
+        }
+        .cirecil{
+        	width: 186px;
+        	height: 186px;
+        	border-radius: 100%;
+        	overflow: hidden;
+        	display: inline-block;
+        	margin: 0 auto;
+        	border: 5px solid #fff;
+        	box-shadow: 0 0 6px 0 rgba(0,0,0,.2);
+        }
+        ol{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+
+        }
+        /*BUTTON*/
+        
+        .btn {
+            padding: 5px 15px;
+            display: inline-block;
+        }
+        
+        .btn.btn-primary {
+            border-radius: 5px;
+            background: #0d0cb5;
+            color: #ffffff;
+        }
+        
+        .btn.btn-white {
+            border-radius: 5px;
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        .btn.btn-white-outline {
+            border-radius: 5px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            margin-top: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(0, 0, 0, .4);
+        }
+        
+        a {
+            color: #0d0cb5;
+        }
+        /*SERVICES*/
+        
+        .services {
+            background: rgba(0, 0, 0, .03);
+        }
+        
+        .text-services {
+            padding: 10px 10px 0;
+            text-align: center;
+        }
+        
+        .text-services h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .services-list p{
+            color: rgba(0, 0, 0, .4);
+        }
+        .services-list {
+            padding: 12px;
+            box-sizing: border-box;
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        .services-list h5{
+        	margin-bottom: 0;
+        }
+        
+        .services-list img {
+            float: left;
+        }
+        
+        .services-list .text {
+            width: calc(100% - 60px);
+            float: right;
+        }
+        
+        .services-list h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #212529;
+        }
+        
+        .services-list p {
+            margin: 0;
+        }
+        /*FOOTER*/
+        
+        .footer {
+            color: rgba(255, 255, 255, .5);
+        }
+        
+        .footer .heading {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        
+        .footer ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        
+        .footer ul li a {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        @media screen and (max-width: 500px) {
+            .icon {
+                text-align: left;
+            }
+            .text-services {
+                padding-left: 0;
+                padding-right: 20px;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+    <center style="width: 100%; background-color: #f1f1f1;">
+        <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+        </div>
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+            <!-- BEGIN BODY -->
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                <tr>
+                    <td valign="top" class="bg_white" style="padding: 1em 2.5em;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <a href="https://www.rnwmultimedia.com/"><img src="https://www.rnwmultimedia.com/wp-content/uploads/2019/08/rnw-group-of-institute-min-367x84.png" width="70%"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <tr>
+                        <td class="bg_white">
+                            <div class="worning">
+                                <h2 style="text-align: center; font-size: 36px; font-weight: 500; margin-bottom: 0; color: #fff;">Placement Department Notice</h2>
+                                <p>
+                                	Your Application has been accepted and you will be informed the next 4-5 working days. You have to fill the application Friday so you have count Monday is the first day because of Saturday and Sunday our Placement department will be closed.
+	                                <br>
+	                                If you are not getting any Response within 4-5 days so please contact our T&P Officer.
+	                                <br>
+	                                T&P Officer contact details :
+	                                <br>
+	                                RWn. Urvilkumar Patel <br>
+	                                Mo. No : <a href="tel:9331313196">+91 933 131 3196</a>
+                          		  </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tr>
+                <!-- end tr -->
+                <tr>
+                </tr>
+                <!-- end tr -->
+                <tr>
+                    <td class="bg_white">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="bg_white" style="padding-top: 50px;">
+                                    <div class="heading-section" style="text-align: center; padding: 0 30px; color: rgba(0, 0, 0, .4);">
+                                        <h2>Old Placement Student</h2>
+                                        <p>Red and White Group of Institutes is the only institute in Surat where their students are always dreaming of doing something new.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end: tr -->
+                <tr>
+                    <td class="bg_white">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding-top: 20px; padding-right: 10px; text-align: center;">
+                                                <a class="cirecil" href="https://www.rnwmultimedia.com/student-placements/" target="_blank"><img src="https://www.rnwmultimedia.com/wp-content/uploads/2020/01/Bhavdip-Sanghani-min.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                                                <div class="services-list">
+                                            		<h3>RWn. Bhavdip Sanghani</h3>
+                                            		<span>(Album Designer)</span>
+                                            		<p style="font-weight: 600;">Photo crate</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding-top: 20px; padding-right: 10px; text-align: center;">
+                                                <a class="cirecil" href="https://www.rnwmultimedia.com/student-placements/" target="_blank"><img src="https://www.rnwmultimedia.com/wp-content/uploads/2020/01/Jalak-Savaliya-min.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                                                <div class="services-list">
+                                            		<h3>RWn. Jalak Savaliya</h3>
+                                            		<span>(Graphic Designer )</span>
+                                            		<p style="font-weight: 600;">Vraj Technologies</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                           <td style="padding-top: 20px; padding-right: 10px; text-align: center;">
+                                               <a class="cirecil" href="https://www.rnwmultimedia.com/student-placements/" target="_blank"><img src="https://www.rnwmultimedia.com/wp-content/uploads/2020/03/Raju-Singh-min.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                                               <div class="services-list">
+                                           		<h3>RWn. Raju Singh Rajput</h3>
+                                           		<span>(Front-end Developer)</span>
+                                           		<p style="font-weight: 600;">Winter infotech</p>
+                                               </div>
+                                           </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding-top: 20px; padding-right: 10px; text-align: center;">
+                                                <a class="cirecil" href="https://www.rnwmultimedia.com/student-placements/" target="_blank"><img src="https://www.rnwmultimedia.com/wp-content/uploads/2020/01/krishna-zalavadiya-min.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                                                <div class="services-list">
+                                            		<h3>RWn. Krishna Zalavadiya</h3>
+                                            		<span>(Web Designing)</span>
+                                            		<p style="font-weight: 600;">Hevin Technoweb</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- end: tr -->
+                <tr>
+                    <td class="bg_white">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="bg_white" style="padding-top: 50px;">
+                                    <div class="heading-section" style="text-align: center; padding: 0 30px;">
+                                        <h2>Job Application Rules</h2>
+                                        <div style="text-align: left; padding-left: 20px; padding-bottom: 30px; color: #000;">
+                                            <ol style="padding-left: 5px;">
+                                                <li>એપ્લિકેશનમાં આપેલી બધી જ માહિતી ભરવી.</li>
+                                                <li>એપ્લિકેશન આપ્યા પછી 4-5 દિવસમા જવાબ મળશે. કોલ કરીને પછી બધી જ કંપનીની ચર્ચા મેસેજ અથવા whatsapp દ્વારા કરવામાં આવશે.</li>
+                                                <li>Interview Schedule કરવા માટે તમારું રાં Latest Project Work અને Professional Resume બરાબર હશે તો તો જ તમારૂ Interview Schedule કરી આપવામાં આવશે.</li>
+                                                <li>RNW PLACEMENT પાસે Current માં જે Company, Position & Location હશે તે તે પ્રમાણે Interview Schedule કરી આપવામાં આવશે જો તમારું લોકેશન નહીં હોય તો તેના માટે આ RNW PLACEMENT જવાબદાર નથી.</li>
+                                                <li>Interview માટે Message અથવા WhatsApp દ્વારા જાણ કરવામાં આવશે.  તો તમારે Company જોડે ફોનમાં વાત કરી પછી RNW Placement ને Phone / Message / WhatsApp દ્વારા જાણ કરવી.</li>
+                                                <li>Company માં Salary, Bond, Timing, Leave નું Discussion કરીને જ ફાઇનલ બોન્ડ કરવો.</li>
+                                                <li>Interview Final થયા પછી Company માંથી Joining Letter લઈને RNW Placement માં જમા કરાવો.</li>
+                                                <li>Company ની Terms & Condition પ્રમાણે 6 Month Internship અથવ 1.5 Year નો Bond રહેશે.</li>
+                                                <li>Company માં Work, Salary, Work કે Data, Misbehavior કે કોઈપણ પ્રકારના કારણોસર Rusticate કરવામાં આવે તો તમારા Bond ના ડોક્યુમેન્ટ Document & Salary માટે તમે જ જવાબદાર રહેશો.  એમના માટે RNW Placement કોઈપણ જવાબદારી લેતુ નથી.</li>
+                                                <li>Job માં Final થઇ ગયા પછી Running Lecture નું Faculty જોડે  Setting કરીને Morning અથવા Evening માં Lecture Arrange કરવો  અને Management નક્કી કરેલ એ Faculty દ્વારા Lecture લેવામાં આવશે એ મને મંજુર છે.</li>
+                                                <li>જો કોઈ વિદ્યાર્થી નો કોર્સ લાંબા સમય માટે HOLD પર છે તો તે કોર્સ CANCEL પણ થઈ શકે છે.</li>
+                                                <li><strong>Contact Details for WhatsApp or SMS : <a style="color: #c52410; text-decoration: underline;" href="tel:9331313196"> +91 933 131 3196</a>, Time : 9AM to 7PM.</strong></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end: tr -->
+                <tr>
+                    <td class="bg_white">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="bg_white" style="padding-top: 50px;">
+                                    <div class="heading-section" style="text-align: center; padding: 0 30px;">
+                                        <h2>Interview Tips</h2>
+                                        <div style="text-align: left; padding-left: 20px; padding-bottom: 30px; color: #000;">
+                                            <ol style="padding-left: 5px;">
+                                                <li>Tell me about yourself</li>
+                                                <li>What are your greatest strengths?</li>
+                                                <li>What are your greatest weaknesses?</li>
+                                                <li>Why are you leaving (or did you leave) this position?</li>
+                                                <li>Why should I hire you?</li>
+                                                <li>Why do you want to work at our company?</li>
+                                                <li>What changes would you make if you came on board?</li>
+                                                <li>Can you work under pressure?</li>
+                                                <li>Tell me about your work in the last company</li>
+                                                <li>Give me an example where you showed good team spirit</li>
+                                            </ol>
+                                            <a href="https://www.workindia.in/interview-questions-and-tips/" style="display: inline-block; background: #c52410; color: #fff; padding: 2px 12px; border-radius: 3px; margin-top: 14px; font-size: 16px;">More Tips</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            </td>
+            </tr>
+            <!-- end:tr -->
+            <!-- 1 Column Text + Button : END -->
+            </table>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                <tr>
+                    <td valign="middle" class="bg_black footer email-section" style="padding-bottom: 0;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="33.333%" style="padding-top: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                                                        <h3 class="heading" style="margin-bottom: 10px;">Contact Info</h3>
+                                                        <p style="color: #fff; margin-bottom: 5px; margin-top: 0px;">A.K.Road : <a style="color: #c52410;" href="tel:9327506324"> +91 93275 06324</a></p>
+                                                        <p style="color: #fff; margin-bottom: 5px; margin-top: 0px;">YOGI CHOWK : <a style="color: #c52410;" href="tel:7650050042"> +91 76500 50042</a></p>
+                                                        <p style="color: #fff; margin-bottom: 5px; margin-top: 0px;">SARTHANA : <a style="color: #c52410;" href="tel:7650050042">+91 78787 80511</a></p>
+                                                        <p style="color: #fff; margin-bottom: 5px; margin-top: 0px;">MOTA VARACHHA : <a style="color: #c52410;" href="tel:9277760777"> +91 92777 60777</a></p>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end: tr -->
+                <tr>
+                   <td valign="middle" class="bg_black footer email-section" style="text-align: center; padding-top: 0;">
+                       <table>
+                           <tbody>
+                               <tr>
+                                   <td valign="top" width="100%">
+                                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                           <tbody>
+                                               <tr>
+                                                   <td style="text-align: left; padding-right: 10px;">
+                                                       <p>© Copyright 2020. Red &amp; White Multimedia Education. All Rights Reserved.</p>
+                                                   </td>
+                                               </tr>
+                                           </tbody>
+                                       </table>
+                                   </td>
+
+                               </tr>
+                           </tbody>
+                       </table>
+                   </td>
+                </tr>
+            </table>
+
+        </div>
+    </center>
+</body>
+
+</html>

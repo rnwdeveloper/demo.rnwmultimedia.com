@@ -1,0 +1,3 @@
+[13-Mar-2021 04:01:16 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/reopen_process/AgreePage.php on line 21
+[02-Apr-2021 19:35:44 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/reopen_process/AgreePage.php on line 21
+[30-May-2021 16:50:25 Asia/Kolkata] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'mzfrxmujjb'@'localhost' (using password: YES) in /home/rnwsoftt/demo.rnwmultimedia.com/reopen_process/AgreePage.php on line 21
