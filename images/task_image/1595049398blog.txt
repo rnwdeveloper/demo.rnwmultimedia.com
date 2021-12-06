@@ -1,0 +1,12 @@
+state
+city
+category
+subcategory
+post
+post_image
+admin
+user
+services
+slider
+comment
+contact

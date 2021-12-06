@@ -1,0 +1,220 @@
+@media (max-width: 1000px){
+	.System_block h3,
+	.News_image_Block h3{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.top-space{
+		margin-top: 30px;
+	}
+	.bottom_video{
+		order: -1;
+	}
+	.Branch_Add_Block .row .col-lg-3:nth-child(2),
+	.Branch_Add_Block .row .col-lg-3:nth-child(1){
+		border-bottom: 2px solid #fff;
+	}
+
+	.Branch_Add_Block .row .col-lg-3:nth-child(1),
+	.Branch_Add_Block .row .col-lg-3:nth-child(3){
+		border-right: 2px solid #fff;
+	}
+
+	.Rnw_Contect_Block{
+		border-color: transparent;
+	}
+}
+@media (max-width: 900px)
+	{	.header{
+		text-align: center;
+	}
+	.logo{
+		width: 270px;
+	}
+	.header .porto-lightbox a.btn{
+		padding: 0 9px 0 38px;
+	    line-height: 30px;
+	    font-size: 11px;
+	}
+	.header_right{
+		text-align: center;
+	}
+	.header_right li{
+		margin: 15px 0 0 0;
+		display: block;
+	}
+	.header_right li:nth-child(3),
+	.header_right li:nth-child(2){
+		display: none;
+	}
+	.header .porto-lightbox a i {
+		width: 30px;
+    	font-size: 14px;
+   		height: 30px;
+    }
+    .container{
+    	width: 540px;
+    }
+    .click_me_sec_block h3{
+    	font-size: 30px;
+    	color: #fff;
+    }
+    .click_me_sec_block li a{
+    	font-size: 18px;
+    }
+    .News_image_Row{
+    	padding: 20px 0 0;
+    }
+    .Whats_Next_Gim .col-md-4{
+    	max-width: 100%;
+    	flex: 100%;
+    }
+    .Our_Company .col-md-3{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .Our_Company .row .col-md-3:nth-child(7) .Company_Logo_Block,
+    .Our_Company .row .col-md-3:nth-child(8) .Company_Logo_Block{
+        margin-bottom: 0;
+    }
+    .Gim_Course_Block{
+    	height: 260px;
+    }
+    .counter_block{
+    	margin-bottom: 20px;
+    }
+    .Branch_Add_Block .row .col-lg-3:nth-child(2),
+    .Branch_Add_Block .row .col-lg-3:nth-child(1){
+    	border-bottom: 2px solid transparent;
+    }
+
+    .Branch_Add_Block .row .col-lg-3:nth-child(1),
+    .Branch_Add_Block .row .col-lg-3:nth-child(3){
+    	border-right: 2px solid #fff;
+    }
+    .Student_Opinions_Info span {
+        font-size: 31px;
+        line-height: 42px;
+        letter-spacing: 4px;
+    }
+
+    .National_International .row .col-lg-3:nth-child(5) .Work_Hard_Student_BLock,
+    .National_International .row .col-lg-3:nth-child(6) .Work_Hard_Student_BLock,
+    .National_International .row .col-lg-3:nth-child(7) .Work_Hard_Student_BLock,
+    .National_International .row .col-lg-3:nth-child(8) .Work_Hard_Student_BLock,
+    .Work_Hard .row .col-lg-3:nth-child(5) .Work_Hard_Student_BLock,
+    .Work_Hard .row .col-lg-3:nth-child(6) .Work_Hard_Student_BLock,
+    .Work_Hard .row .col-lg-3:nth-child(7) .Work_Hard_Student_BLock,
+    .Work_Hard .row .col-lg-3:nth-child(8) .Work_Hard_Student_BLock{
+    	margin-bottom: 15px;
+    }
+    .red_button{
+        margin-top: 20px !important;
+    }/*
+    .Exam_System_Bottom_Block .red_button{
+        margin-top: 0 !important;
+    }*/
+    .Company_Logo_Block{
+        height: 130px;
+        padding: 10px;
+    }
+    .Company_Logo_Block img{
+        width: 120px;
+    }
+    .Work_Hard_Student_BLock h3{
+        font-size: 16px;
+    }
+    .Work_Hard_Student_BLock h4{
+        font-size: 14px;
+    }
+    .Work_Hard_Student_BLock img{
+        width: 150px;
+    }
+    .counter_block{
+        font-size: 40px;
+    }
+    .counter_block h2{
+        font-size: 25px;
+    }
+    .counter_block p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px){
+    .sec_heading_first h2{
+        font-size: 25px;
+    }
+}
+@media (max-width: 540px){
+	.container{
+		width: 100%;
+	}
+	.click_me_sec_block h3{
+		font-size: 26px;
+	}
+	.click_me_sec_block li a{
+		padding: 6px 14px;
+	}
+	.news_paper_news_bottom{
+		padding: 0;
+	}
+	.News_image_Block_first{
+		margin-bottom: 30px;
+	}
+	.top-space{
+		margin-top: 30px;
+	}
+	.Gim_Course_Block{
+    	height: auto;
+    }
+    .Contact_num_icon{
+    	font-size: 26px;
+    }
+    .Contact_Num_Info h3{
+    	font-size: 12px;
+    }
+    .Branch_Add_Block .row .col-lg-3:nth-child(2),
+    .Branch_Add_Block .row .col-lg-3:nth-child(1){
+    	border-bottom: 2px solid #fff;
+    }
+    .National_International .row .col-lg-3:nth-child(8) .Work_Hard_Student_BLock,
+    .Work_Hard .row .col-lg-3:nth-child(8) .Work_Hard_Student_BLock{
+    	margin-bottom: 15px;
+    }/*
+    .red_button{
+    	margin-bottom: 10px;
+    }*/
+    .Exam_System_Bottom_Block .red_button{
+        margin-top: 20px !important;
+    }
+    .Company_Logo_Block{
+        width: auto;
+        height: 120px;
+    }
+    .sec-heading h2{
+        font-size: 18px;
+    }
+    .Work_Hard_Student_BLock h4{
+        font-size: 12px;
+    }
+}
+@media (max-width: 440px){
+    .Contact_Num_Info {
+    	text-align: center;
+    }
+	.click_me_sec_block h3{
+		margin-bottom: 15px;
+	}
+    .Work_Hard_Student_BLock img{
+        width: 130px;
+    }
+    .Work_Hard_Student_BLock h3{
+        font-size: 12px;
+    }
+    .Students_Company_Name{
+        font-size: 10px;
+    }
+    .Students_Company_Work{
+        font-size: 10px;
+    }
+}

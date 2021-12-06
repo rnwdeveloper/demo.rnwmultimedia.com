@@ -1,0 +1,2 @@
+[19-Oct-2021 08:49:25 Asia/Kolkata] PHP Warning:  mysqli_connect(): (HY000/2002): Connection timed out in /home/rnwsoftt/demo.rnwmultimedia.com/Lead Calling_report/get_lead_list.php on line 8
+[19-Oct-2021 08:49:25 Asia/Kolkata] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/rnwsoftt/demo.rnwmultimedia.com/Lead Calling_report/get_lead_list.php on line 8

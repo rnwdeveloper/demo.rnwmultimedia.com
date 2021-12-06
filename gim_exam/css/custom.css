@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--red: #e31e25;
+	--blue: #0b527e;
+	--gray: #666666;
+	--darkgray: #dedede;
+	--lightgray: #fefefe;
+	--black: #2b2a28;
+	--white:  #ffffff;
+}
+
+body{
+	position: relative;
+}
+
+img{
+	max-width: 100%;
+}
+.logo-img{
+	max-width: 50%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+hr{
+	border: 1px dashed var(--blue);
+	margin: 15px;
+}
+
+body, button{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
+
+ul{
+	list-style: none;
+}
+
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.justify-between{
+	justify-content: space-between;
+}
+
+.align-self-center{
+	align-self: center;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.red{
+	color: var(--red);
+}
+
+.blue{
+	color: var(--blue);
+}
+
+.gray{
+	color: var(--gray);
+}
+
+.green{
+	color: #32CD32;
+}
+
+.d-flex{
+	display: flex;
+}
+
+main{
+	margin: 15px auto;
+	padding: 15px;
+	border: 2px solid var(--blue);
+	width: 60%;
+	align-self: center;
+}
+
+.student-details{
+	padding: 25px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.15);
+	border-radius: 10px;
+	background-color: var(--white);
+	margin: 15px auto;
+}
+
+.student-details1{
+	padding: 15px 25px;
+}
+
+.student-details ul.details li{
+	padding: 5px;
+}
+
+.student-details ul.details li span:first-child{
+	color: var(--gray);
+	padding-right: 5px;
+}
+
+.student-details ul.details li span:last-child{
+	color: var(--black);
+	font-weight: 500;
+}
+
+ul.piq li{
+	background-color: var(--blue);
+	color: var(--white);
+	margin: 5px;
+	padding: 0 25px;
+	line-height: 40px;
+	border-radius: 50px;
+	text-transform: capitalize;
+}
+
+table{
+	width: 100%;
+	margin-top: 15px;
+	border: 1px solid var(--darkgray);
+}
+
+table tr:first-child{
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+table tr th,
+table tr td{
+	line-height: 40px;
+	border-right: 1px solid var(--darkgray);
+	border-bottom: 1px solid var(--darkgray);
+}
+
+table tr th:last-child,
+table tr td:last-child{
+	border-right: 0;
+}
+
+table tr:last-child td{
+	border-bottom: 0;
+}
+
+.student-details button{
+	background-color: var(--blue);
+	color: var(--white);
+	margin: 5px;
+	padding: 0 25px;
+	line-height: 40px;
+	border-radius: 50px;
+	text-transform: capitalize;
+	border: 0;
+}
+
+h2.green{
+	font-weight: 400;
+}
+
+.order1{
+	order: 1;
+}
+
+.order2{
+	order: 2;
+}
+
+@media(max-width:  767px){
+	.order1{
+		order: 2;
+	}
+
+	.order2{
+		order: 1;
+	}
+
+	ul.piq{
+		display: block;
+	}
+
+	main{
+		width: 95%;
+	}
+
+	.student-details,
+	.student-details1{
+		padding: 15px;
+	}
+
+	.img{
+		display: none;
+	}
+}
+
+.img{
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	top: 17.5%;
+	left: 25%;
+	opacity: 0.1;
+}
+

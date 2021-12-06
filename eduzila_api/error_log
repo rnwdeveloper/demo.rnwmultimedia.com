@@ -1,0 +1,8 @@
+[15-Feb-2021 19:20:43 Australia/Sydney] PHP Warning:  Invalid argument supplied for foreach() in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 267
+[15-Feb-2021 19:21:52 Australia/Sydney] PHP Warning:  mysqli_connect(): (HY000/2002): Connection timed out in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 49
+[15-Feb-2021 19:21:52 Australia/Sydney] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 54
+[15-Feb-2021 19:21:52 Australia/Sydney] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 54
+[15-Feb-2021 19:22:09 Australia/Sydney] PHP Warning:  Invalid argument supplied for foreach() in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 267
+[15-Feb-2021 19:22:50 Australia/Sydney] PHP Warning:  Invalid argument supplied for foreach() in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 267
+[15-Feb-2021 19:23:33 Australia/Sydney] PHP Warning:  Invalid argument supplied for foreach() in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 267
+[15-Feb-2021 20:12:22 Australia/Sydney] PHP Warning:  Invalid argument supplied for foreach() in /home/rnwsoftt/demo.rnwmultimedia.com/eduzila_api/Eduzilla_api.php on line 267

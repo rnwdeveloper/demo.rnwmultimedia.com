@@ -1,0 +1,58 @@
+@media(max-width: 900px){
+	.clicked_btn_block h5{
+		margin-bottom: 15px;
+	}
+	.webinar_info{
+		margin-top: 30px;
+	}
+	.pass_box{
+		font-size: 35px;
+	}
+	.clicked_btn_block{
+		text-align: center;
+	}
+}
+@media(max-width: 768px){
+	.header h4{
+		font-size: 22px;
+	}
+	.clicked_btn_block h5{
+		font-size: 32px;
+	}
+	.btn-mydesign{
+		padding: 7px 50px;
+	}
+	.sec_heading h2{
+		font-size: 28px;
+	}
+	.sec_heading p{
+		font-size: 18px;
+	}
+	.sec_heading{
+		padding-bottom: 15px;
+	}
+}
+@media(max-width: 575px){
+	.collaboration_img_block{
+		width: 100%;
+		height: auto;
+	}
+	.happy_student_block_box img{
+		width: 100%;
+	}
+	.happy_student_block_box h3{
+		font-style: 14px;
+	}
+	.Students_Company_Work{
+		font-size: 10px;
+	}
+	.webinar_info h4{
+		font-size: 30px;
+	}
+	.webinar_info ul li{
+		 font-size: 18px;
+	}
+	.pass_box{
+		margin-bottom: 15px;
+	}
+}
