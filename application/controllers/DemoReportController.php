@@ -1034,10 +1034,10 @@ class DemoReportController extends CI_controller
 
     public function view_certificate()
     {
-	$config = get_config();
-	echo "<pre>";
-	print_r($config);
-	die;
+	$config =& get_config();
+        echo "<pre>";
+        print_r($config);
+        die;
         $update['upd_see'] = $this->cm->check_update("demo");
         $display['cancel_reason_all'] = $this->cm->view_all("cancel_reason_list");
         $display['faculty_analysis'] = $this->cm->view_all("demo");  
