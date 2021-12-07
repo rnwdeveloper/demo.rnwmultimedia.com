@@ -7577,11 +7577,17 @@ class Admission extends CI_controller
         $data = $this->cm->select_data('admission_documents_permission', 'course_id', $cids);
         echo json_encode(array('record' => $data));
     }
-    public function download_file()
-	{
-		$this->load->helper('download');
-		$file = $this->input->get('file');
-		$data = 'dist/admissiondocuments/'.$file;
+
+    public function download_file(){
+	$this->load->helper('download');
+	$file = $this->input->get('file');
+	$data = 'dist/admissiondocuments/'.$file;
     	force_download($data, NULL);
-	}
+    }
+	
+   public function newrepo(){
+	echo "welcome git";
+   }
+	
+	
 }
