@@ -1034,7 +1034,7 @@ class DemoReportController extends CI_controller
 
     public function view_certificate()
     {
-	$config =& get_config();
+	$config = get_config();
 	echo "<pre>";
 	print_r($config);
 	die;
