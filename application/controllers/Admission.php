@@ -7583,11 +7583,6 @@ class Admission extends CI_controller
 	$file = $this->input->get('file');
 	$data = 'dist/admissiondocuments/'.$file;
     	force_download($data, NULL);
-    }
-	
-   public function newrepo(){
-	echo "welcome git";
-   }
-	
-	
+    }	
 }
+?>
